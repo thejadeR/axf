@@ -1,0 +1,37 @@
+{% extends 'base/base.html' %}
+{% load static %}
+
+
+
+
+
+{#标题坑#}
+    {% block title %}
+       <title>AXF | 市场</title>
+    {% endblock %}
+
+
+{#給子html的css坑#}
+    {% block basecss %}
+ <link rel="stylesheet" href="{% static 'market/css/market.css' %}">
+    {% endblock %}
+
+
+
+{#給子类的中间内容坑#}
+<div class="hidescroll">
+    <div id="content">
+        {% block content %}
+            市场
+        {% endblock %}
+    </div>
+</div>
+
+
+
+
+
+{#給子html挖的js坑#}
+{% block basejs %}
+
+{% endblock %}

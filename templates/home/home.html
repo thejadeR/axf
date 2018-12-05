@@ -1,0 +1,41 @@
+{% extends 'base/base.html' %}
+{% load static %}
+
+
+
+
+
+{#标题坑#}
+    {% block title %}
+        <title>AXF | 首页</title>
+    {% endblock %}
+
+
+
+{#給子html的css坑#}
+    {% block basecss %}
+        <link rel="stylesheet" href="{% static 'home/css/home.css' %}">
+    {% endblock %}
+
+
+
+
+
+
+{#給子类的中间内容坑#}
+<div class="hidescroll">
+    <div id="content">
+        {% block content %}
+            首页
+        {% endblock %}
+    </div>
+</div>
+
+
+
+
+
+{#給子html挖的js坑#}
+{% block basejs %}
+
+{% endblock %}
